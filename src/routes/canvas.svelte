@@ -18,6 +18,7 @@
     let P5;
 
     onMount(async () => {
+        // @ts-ignore
         P5 = (await import('p5-svelte')).default;
     });
 
