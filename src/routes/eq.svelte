@@ -1,20 +1,24 @@
+<!-- client side only-->
 <script>
     import "../global.css";
-    import { browser } from '$app/env';
-    import * as Pizzicato from "pizzicato/distr/Pizzicato.js";
+    import Button from '../lib/Button.svelte';
+    import * as Pizzicato from 'pizzicato/distr/Pizzicato';
 
-    if(browser){
-      var sawtoothWave = new Pizzicato.Sound({
-        source: 'wave',
-        options: {
-          type: 'sine'
-        }
-      });
-
-      sawtoothWave.play();
-    }
+    // vars
+    let sawtoothWave =  new Pizzicato.Sound({
+      source: 'wave',
+      options: {
+        type: 'sine'
+      }
+    });
+    let playSound = () => sawtoothWave.play();
+    let stopSound = () => sawtoothWave.stop();
 
 </script>
+
+
+  <Button onClick={playSound} label="Play"/>
+  <Button onClick={stopSound} label="Stop"/>
 
 <style lang="scss">
 

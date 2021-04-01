@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import { onMount } from 'svelte';
     import { browser } from '$app/env';
 
@@ -18,8 +18,7 @@
     let P5;
 
     onMount(async () => {
-        // @ts-ignore
-        P5 = (await import('p5-svelte')).default;
+        P5 = (await import('p5-svelte/dist/index')).default;
     });
 
     console.log('p5', P5);
