@@ -2,7 +2,7 @@
 <script>
     import "../global.css";
     import Button from '../lib/Button.svelte';
-    import * as Pizzicato from 'pizzicato/distr/Pizzicato';
+    import * as Pizzicato from 'pizzicato';
 
     // vars
     let sawtoothWave =  new Pizzicato.Sound({
