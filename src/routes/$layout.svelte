@@ -5,8 +5,6 @@
 <nav class="flex flex-1 justify-center space-x-4">
     <a class="inline-block special self-center" href=".">MixorMator</a>
     <span class="separator">|</span>
-    <a class="inline-block" href="canvas">Canvas</a>
-    <span class="separator">|</span>
     <a class="inline-block" href="eq">EQ</a>
 </nav>
 
