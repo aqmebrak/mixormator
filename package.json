@@ -5,11 +5,10 @@
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"start": "svelte-kit start",
-		"type-check": "tsc --project tsconfig.json --pretty --noEmit",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"format-check": "prettier -- --list-different",
-		"validate": "npm-run-all --parallel type-check lint build",
+		"validate": "npm-run-all --parallel lint build",
 		"prepare": "husky install"
 	},
 	"devDependencies": {
