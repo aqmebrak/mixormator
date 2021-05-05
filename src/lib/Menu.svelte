@@ -13,7 +13,7 @@
     EQ Bell
   </button>
   <button
-    class="cell"
+    class="cell disabled"
     on:click={
       () => goto('comp')
     }
@@ -21,7 +21,7 @@
     Compressor
   </button>
   <button
-    class="cell"
+    class="cell disabled"
     on:click={
       () => goto('db')
     }
@@ -51,5 +51,11 @@
     font-size: 16px;
     font-weight: 700;
     color: #ab2805;
+  }
+
+  .disabled {
+    border-color: rgba(44, 45, 48, 0.8);
+    color: rgba(44, 45, 48, 0.8);
+    cursor: unset;
   }
 </style>

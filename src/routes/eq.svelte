@@ -39,7 +39,6 @@
   };
 
   const answerRound = () => {
-    console.log('answer');
     answered = true;
   };
 
